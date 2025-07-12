@@ -1,0 +1,1 @@
+Aplicativo desenvolvido para o curso de Engenheiro de Front-End da EBAC, para o exercício sobre POO. Esse aplicativo é um paquímetro que calcula quanto tempo o usuário pode estacionar a partir do valor inputado em reais, assim como o troco que ele irá receber
