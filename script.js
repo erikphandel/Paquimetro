@@ -1,11 +1,12 @@
+// Abreviação da função document.getElementById
 const mensagem = document.getElementById('mensagem')
-
+// Classe de objeto Paquimetro que será utilizada
 class Paquimetro {
-
+// Função constructor resgata o valor inserido pelo usuário no HTML, transforma em float, e substitui vírgulas por pontos
     constructor (valorInserido) {
         this.valorInserido = parseFloat(document.getElementById('valor').value.replace(',','.'));
         }
-
+// Função para calcular o tempo do paquímetro e troco a ser devolvido a partir do valor inputado
     calcularTempo() {
         let valorTroco;
             if (this.valorInserido <1) {
@@ -22,7 +23,7 @@ class Paquimetro {
             };
     }
 }
-
+// Função chamada pelo botão no HTML que cria um novo objeto Paquimetro e roda a função calcularTempo
 function calcular() {
     const paquimetro = new Paquimetro();
     paquimetro.calcularTempo()
